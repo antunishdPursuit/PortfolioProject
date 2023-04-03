@@ -4,15 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="main.js"></script>
+    <title>Portfolio Project</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
-<body>
-    <form class="location">
-        <input id="data" type="data" placeholder="City">
-        <button id = "test" type="submit">Get New Questions</button>
-    </form>
-    <p></p>
-</body>
+    <body>
+        <header class="container">
+                <div class="row ">
+                    <div class="col-auto">
+                        <img class="row" id="randomPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    </div>
+                    <div class="col row align-items-center justify-content-center">
+                        <h1 class="col-auto"><a href="about.html" target="_self" rel="noopener noreferrer">About</a></h1>
+                        <h1 class="col-auto"><a href="index.html" target="_self" rel="noopener noreferrer">Fun</a></h1>
+                    </div>
+                    <div class="col-auto">
+                        <img class="row trainerPokemon" id="randomShinyPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    </div>
+                </div>
+        </header>
+        <main class="container">
+            <div class="row  align-items-center">
+                <div class="col-auto align-items-start">
+                    <img class="row playerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row playerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row playerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row playerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row playerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row playerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                </div>
+                <div class="col row"> 
+                    <!-- justify-content-center -->
+                    <img class ="col-auto" src="kaola.jpg" id="koala" alt="Kaola">
+                    <p class=" col align-items-start  align-self-start bio">
+                        Hi! My name is Dennys Antunish
+                        <br>    
+                        (Optional) My pronouns are He/Him
+                        <br>    
+                        I am a Pursuit fellow with experience in full stack development with a focus on react and javascript.
+                        <br>    
+                        My journey into software engineering began when I started to wonder how computers and other applications worked.
+                        My skills include using ServiceNow, html, css, javascript, react, and bootstrap
+                        <br>    
+                        Given my passion for AI and the wonders of Chatgpt
+                        <br>    
+                        I am currently working to understand how these AI models are created and hope to contribute to the future of AI.
+                    </p>
+                    <div class="row justify-content-center" id="pokeballContainer">
+                        <img src = "pokeball.png" alt="pokeball" id = "gardevoir"class="col-auto pokeball">
+                        <img src = "pokeball.png" alt="pokeball" id = "lopunny"class="col-auto pokeball">
+                        <img src = "pokeball.png" alt="pokeball" id = "primarina"class="col-auto align-items-end pokeball">
+                    </div>
+                    <p class=" align-items-end">
+                        The above functiolity showcases the click event listner which will be used to make a simple pokemon battle between the player's pokemon and the oppising trainer's Pokemon.
+                        <br>
+                        After clicking one of the above pokeball(already three predetermined shiny pokemon),the upper left will display it.  Six additional pokemon will spawn below the player's pokemon(already predetermined).
+                        <br>
+                        Then, on the right side will spawn seven random pokemon which will be 1 trainer pokemon and a six pokemon team.
+                        <br>
+                        Hopefully, after clicking on one of the left side pokemon, a mini pokemon battle will happen in the middle of the screen between the choosen pokemn and a pokemon on the left. 
+                    </p>
+                </div>
+                <div class="col-auto align-items-end">
+                    <img class="row trainerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row trainerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row trainerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row trainerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row trainerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                    <img class="row trainerPokemon" src="clearBackground.png" alt="Random Pokemon">
+                </div>
+            </div>
+        </main>
+        <footer class="container">
+                <div class="row">
+                    <div class="col-auto">
+                        <img class = "row" src="programming.gif" alt="girl programming">
+                    </div>
+                    <div class="col row align-items-end justify-content-end">
+                        <h1 class="col-auto footer"><a href="https://github.com/antunishdPursuit" target="_blank" rel="noopener noreferrer">Github</a></h1>
+                        <h1 class="col-auto footer"><a href="https://www.linkedin.com/in/dennys-antunish/" target="_blank" rel="noopener noreferrer">Linkedin</a></h1>
+                    </div>
+                    <div class="col-auto">
+                        <img src="clearBackground.png" alt="Random Pokemon">
+                    </div>
+                </div>
+        </footer>
+    <script defer src="main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

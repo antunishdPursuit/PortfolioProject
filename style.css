@@ -1,0 +1,119 @@
+/* header */
+header {
+    border: 1px solid gainsboro;
+}
+.borderLeft {
+    border-left: 3px solid #8A9AAE;
+    /* background: linear-gradient(225deg, #091A2C,white  80%); */
+}
+.borderSide {
+    border-right: 3px solid #8A9AAE;
+}
+
+.borderRight {
+    border-right: 3px solid #8A9AAE;
+
+}
+
+/* Footer, alos borrowed propeties from header*/
+footer {
+    border: 2px solid gainsboro;
+}
+
+/* Body */
+    /* Serach box */
+    #movie {
+        border-radius: 25px;
+        border: 1px solid;
+        padding: 10px; 
+        width: 100%;
+        height: 5px;  
+    }
+    
+    #leftSideBox {
+        margin-right: 20px;
+        border: 3px dotted #060918;
+    }
+        /* Movie box sizes */
+    div > .movieBoxes {
+        padding: 1px;
+    
+    }
+    .poster {
+        height: 200px;
+        width: 150px;
+        padding: 0;
+    }
+/* A tags stylzed */
+    /* unvisited link */
+    a:link {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    /* visited link */
+    a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: red;
+        text-decoration: none;
+    }
+    
+    /* selected link */
+    a:active {
+        color: inherit;
+        text-decoration: none;
+    }
+.bio {
+    font-size: small;
+}
+.container {
+    margin-top: 10px;
+}
+img {
+    height: 100px;
+    width: 100px
+}
+/* width of the pokeballs */
+.pokeball {
+    width: 1em;
+    height: 3.5em;
+}
+
+.hidden {
+    display: none;
+}
+/* width and hieght of the pokeballs, needed to use id for it to work */
+#koala {
+    height: 275px;
+    width: 275px;
+}
+#lopunny {
+    height: 100px;
+    width: 100px
+}
+#gardevoir {
+    height: 100px;
+    width: 100px
+}
+#primarina {
+    height: 100px;
+    width: 100px
+}
+
+/* gave divs and the pokeballs margin so the inner content doesnt touch the div box */
+.marginBottom{
+    margin-bottom: 15px;
+}
+
+.pokeballs {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+
+
