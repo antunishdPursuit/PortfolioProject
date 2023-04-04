@@ -115,5 +115,24 @@ img {
     margin-bottom: 10px;
 }
 
+/* picture background */
+body{
+    background-image: url("popcorn.jpeg");
+    background-size: contain;
 
 
+}
+#leftSideBox{
+    background-image: url("popcorn.jpeg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+
+    /* background-image: -webkit-linear-gradient(left, 
+      rgba(0,0,0,0.9) 0%, 
+      rgba(0,0,0,0) 20%,
+      rgba(0,0,0,0) 80%,
+      rgba(0,0,0,0.9) 100%
+    ),
+    url(popcorn.jpeg); */
+}

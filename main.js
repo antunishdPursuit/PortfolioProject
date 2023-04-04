@@ -16,6 +16,8 @@ let pokeballContainer = document.querySelector("#pokeballContainer")
 // Empty array for seven random id numbers for poekmon
 let randomSevenNumbers =[]
 let count = 0
+// changing the text below the pokemon
+let changeText = document.getElementById("changeText")
 // Wait for the webpage to load
 window.onload = () => {
   const random = (id) => {
@@ -91,6 +93,8 @@ gardevoir.addEventListener("click",(event) => {
       
     })
   }
+  // Change the text below pokeballs
+  changeText.innerHTML = "Click on one of the pokemon on the left side. This will move the chosen pokemon to the middle of the screen and a random pokemon from the right side. <br> A mini pokemon battle should happen but the functionality has not been implemented yet."
   }
 })
 lopunny.addEventListener("click",(event) => {
@@ -148,8 +152,9 @@ lopunny.addEventListener("click",(event) => {
       
     })
   }
+    // Change the text below pokeballs
+    changeText.innerHTML = "Click on one of the pokemon on the left side. This will move the chosen pokemon to the middle of the screen and a random pokemon from the right side. <br> A mini pokemon battle should happen but the functionality has not been implemented yet."  
   }
-
 })
 primarina.addEventListener("click",(event) => {
   count++
@@ -206,10 +211,10 @@ primarina.addEventListener("click",(event) => {
       
     })
   }
+    // Change the text below pokeballs
+    changeText.innerHTML = "Click on one of the pokemon on the left side. This will move the chosen pokemon to the middle of the screen and a random pokemon from the right side. <br> A mini pokemon battle should happen but the functionality has not been implemented yet."
   }
-
 })
-
 
 }
 

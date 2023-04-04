@@ -14,7 +14,7 @@ window.onload = () => {
             error.innerHTML = "More than 3 Letters <br> And no symbols"
         } else {
             error.innerHTML = "Movie Search"
-        fetch(`http://www.omdbapi.com/?apikey=5e8cd208&s=${movieType}`)
+        fetch(`https://www.omdbapi.com/?apikey=5e8cd208&s=${movieType}`)
         .then((response) => response.json())
         .then((json) => {
             console.log(json)
