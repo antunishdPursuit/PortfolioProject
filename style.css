@@ -117,22 +117,27 @@ img {
 
 /* picture background */
 body{
-    background-image: url("popcorn.jpeg");
+    /* background-image: url("popcorn.jpeg"); */
     background-size: contain;
 
 
 }
 #leftSideBox{
-    background-image: url("popcorn.jpeg");
     background-size: 200px;
-    background-repeat: no-repeat;
-    background-color: aliceblue;
+    background-color: #EEEEF0;
+}
 
-    /* background-image: -webkit-linear-gradient(left, 
-      rgba(0,0,0,0.9) 0%, 
-      rgba(0,0,0,0) 20%,
-      rgba(0,0,0,0) 80%,
-      rgba(0,0,0,0.9) 100%
-    ),
-    url(popcorn.jpeg); */
+/* colors for the movie background */
+
+#movieBackground {
+    background: linear-gradient(270deg, #706993, white);
+}
+#movieHeaderBackground {
+    background: linear-gradient(20deg, white, #F3E4A2);
+}
+#movieBox {
+    background: linear-gradient(90deg, white, #D8AD72);
+}
+#movieFooterBackground {
+    background: linear-gradient(135deg, white, #F3E4A2);
 }
