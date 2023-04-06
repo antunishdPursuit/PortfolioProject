@@ -16,8 +16,12 @@ let pokeballContainer = document.querySelector("#pokeballContainer")
 // Empty array for seven random id numbers for poekmon
 let randomSevenNumbers =[]
 let count = 0
+let countTwo = 0
 // changing the text below the pokemon
 let changeText = document.getElementById("changeText")
+// Text after click 
+let player = 0
+let enemy = 0
 // Wait for the webpage to load
 window.onload = () => {
   const random = (id) => {
@@ -87,14 +91,32 @@ gardevoir.addEventListener("click",(event) => {
   for (let index = 0; index < playerPokemons.length; index++) {
       const element = playerPokemons[index];
       element.addEventListener("click", (event) => {
+        countTwo = 0
       let pokeRandomNumber = Math.floor(Math.random() * 6)
       gardevoir.src = event.target.src
       primarina.src = sixPokemon[pokeRandomNumber].src
-      
+      //Added mouseover event lisnter to simulate a pokemon battle
+      lopunny.src = "fight.gif"
+      lopunny.addEventListener("mouseover", event => {
+          countTwo++
+        let flip = Math.ceil(Math.random() *2)
+        if(countTwo <= 1){
+          flip === 1 ? player++ : enemy++
+          changeText.innerHTML =  `Player:${enemy} Vs Enemy: ${player} => Win Condition: First to six! <br><strong>Instructions:</strong> <br> Now we will showcase the mouseover event listner. <br> After clicking on one of the pokemon on the left side, the chosen pokemon will move to the middle as well as a random pokemon from the right side.  <br> Move your mouse over the fight gif and it will show you who won the pokemon battle. <br> Click on another pokemon from the left to have another pokemon battle`
+          if (flip === 1){
+            lopunny.src = "right.png"
+            gardevoir.src = "defeat.gif"
+          } else {
+            lopunny.src = "left.png"
+            primarina.src = "defeat.gif"
+          }
+        }
+        
+      })
     })
   }
   // Change the text below pokeballs
-  changeText.innerHTML = "Click on one of the pokemon on the left side. This will move the chosen pokemon to the middle of the screen and a random pokemon from the right side. <br> A mini pokemon battle should happen but the functionality has not been implemented yet."
+  changeText.innerHTML = `Player: 0 Vs Enemy: 0 <br><strong>Instructions:</strong> <br> Now we will showcase the mouseover event listner. <br> After clicking on one of the pokemon on the left side, the chosen pokemon will move to the middle as well as a random pokemon from the right side.  <br> Move your mouse over the fight gif and it will show you who won the pokemon battle. <br> Click on another pokemon from the left to have another pokemon battle`
   }
 })
 lopunny.addEventListener("click",(event) => {
@@ -146,16 +168,39 @@ lopunny.addEventListener("click",(event) => {
   for (let index = 0; index < playerPokemons.length; index++) {
       const element = playerPokemons[index];
       element.addEventListener("click", (event) => {
+        countTwo = 0
       let pokeRandomNumber = Math.floor(Math.random() * 6)
       gardevoir.src = event.target.src
       primarina.src = sixPokemon[pokeRandomNumber].src
-      
+        //Added mouseover event lisnter to simulate a pokemon battle     
+        lopunny.src = "fight.gif"
+        lopunny.addEventListener("mouseover", event => {
+            countTwo++
+          let flip = Math.ceil(Math.random() *2)
+          if(countTwo <= 1){
+            flip === 1 ? player++ : enemy++
+            changeText.innerHTML =  `Player:${enemy} Vs Enemy: ${player} => Win Condition: First to six! <br><strong>Instructions:</strong> <br> Now we will showcase the mouseover event listner. <br> After clicking on one of the pokemon on the left side, the chosen pokemon will move to the middle as well as a random pokemon from the right side.  <br> Move your mouse over the fight gif and it will show you who won the pokemon battle. <br> Click on another pokemon from the left to have another pokemon battle`
+            if (flip === 1){
+              lopunny.src = "right.png"
+              gardevoir.src = "defeat.gif"
+            } else {
+              lopunny.src = "left.png"
+              primarina.src = "defeat.gif"
+            }
+          }
+          
+        })
+
     })
   }
     // Change the text below pokeballs
-    changeText.innerHTML = "Click on one of the pokemon on the left side. This will move the chosen pokemon to the middle of the screen and a random pokemon from the right side. <br> A mini pokemon battle should happen but the functionality has not been implemented yet."  
+    changeText.innerHTML = `Player: 0 Vs Enemy: 0 <br><strong>Instructions:</strong> <br> Now we will showcase the mouseover event listner. <br> After clicking on one of the pokemon on the left side, the chosen pokemon will move to the middle as well as a random pokemon from the right side.  <br> Move your mouse over the fight gif and it will show you who won the pokemon battle. <br> Click on another pokemon from the left to have another pokemon battle`
   }
+
 })
+
+
+
 primarina.addEventListener("click",(event) => {
   count++
   if (count <= 1){
@@ -205,14 +250,33 @@ primarina.addEventListener("click",(event) => {
   for (let index = 0; index < playerPokemons.length; index++) {
       const element = playerPokemons[index];
       element.addEventListener("click", (event) => {
-      let pokeRandomNumber = Math.floor(Math.random() * 6)
-      gardevoir.src = event.target.src
-      primarina.src = sixPokemon[pokeRandomNumber].src
-      
+        countTwo = 0
+        // changeText.innerHTML = textAfterClick
+        let pokeRandomNumber = Math.floor(Math.random() * 6)
+        gardevoir.src = event.target.src
+        primarina.src = sixPokemon[pokeRandomNumber].src
+        //Added mouseover event lisnter to simulate a pokemon battle
+        lopunny.src = "fight.gif"
+        lopunny.addEventListener("mouseover", event => {
+            countTwo++
+          let flip = Math.ceil(Math.random() *2)
+          if(countTwo <= 1){
+            flip === 1 ? player++ : enemy++
+            changeText.innerHTML =  `Player:${enemy} Vs Enemy: ${player} => Win Condition: First to six! <br><strong>Instructions:</strong> <br> Now we will showcase the mouseover event listner. <br> After clicking on one of the pokemon on the left side, the chosen pokemon will move to the middle as well as a random pokemon from the right side.  <br> Move your mouse over the fight gif and it will show you who won the pokemon battle. <br> Click on another pokemon from the left to have another pokemon battle`
+            if (flip === 1){
+              lopunny.src = "right.png"
+              gardevoir.src = "defeat.gif"
+            } else {
+              lopunny.src = "left.png"
+              primarina.src = "defeat.gif"
+            }
+          }
+          
+        })
     })
   }
     // Change the text below pokeballs
-    changeText.innerHTML = "Click on one of the pokemon on the left side. This will move the chosen pokemon to the middle of the screen and a random pokemon from the right side. <br> A mini pokemon battle should happen but the functionality has not been implemented yet."
+    changeText.innerHTML =  `Player: 0 Vs Enemy: 0 <br><strong>Instructions:</strong> <br> Now we will showcase the mouseover event listner. <br> After clicking on one of the pokemon on the left side, the chosen pokemon will move to the middle as well as a random pokemon from the right side.  <br> Move your mouse over the fight gif and it will show you who won the pokemon battle. <br> Click on another pokemon from the left to have another pokemon battle`
   }
 })
 

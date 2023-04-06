@@ -141,3 +141,29 @@ body{
 #movieFooterBackground {
     background: linear-gradient(135deg, white, #F3E4A2);
 }
+
+/* colors for the pokemon background */
+#pokemonBackground {
+    background: linear-gradient(0deg,white, #848182);
+}
+
+#changeText {
+    background: linear-gradient(018deg,white, #848182);
+}
+#pokemonFooterBackground {
+    background: linear-gradient(-45deg, #DE3D34, #848182,#ffffff);
+	animation: gradient 9s ease infinite;
+    background-size: 400% 400%;
+    height: 100%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
